@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeaa7"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/idHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Head"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/idHair"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/idHair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Hair"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/idMoustache"
+            app:layout_constraintTop_toBottomOf="@+id/idHead" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/idMoustache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Moustache"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/idEyes"
+            app:layout_constraintTop_toBottomOf="@+id/idHair" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/idEyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Eyes"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/idEyebrow"
+            app:layout_constraintTop_toBottomOf="@+id/idMoustache" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/idEyebrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Eyebrow"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/idBread"
+            app:layout_constraintTop_toBottomOf="@+id/idEyes" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/idBread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Bread"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idEyebrow" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/bread"
+                    android:layout_width="93dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.500"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/head"
+                    app:layout_constraintVertical_bias="0.910" />
+
+                <ImageView
+                    android:id="@+id/eyes"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.365" />
+
+                <ImageView
+                    android:id="@+id/eyebrow"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/head"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.197" />
+
+                <ImageView
+                    android:id="@+id/hair"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.05" />
+
+                <ImageView
+                    android:id="@+id/moustache"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.60" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Mr.Head"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Head"
+            app:layout_constraintStart_toEndOf="@+id/idHead"
+            app:layout_constraintTop_toTopOf="@+id/idHead" />
+
+        <Button
+            android:id="@+id/btnHair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hair"
+            app:layout_constraintStart_toEndOf="@+id/idHair"
+            app:layout_constraintTop_toBottomOf="@+id/btnHead" />
+
+        <Button
+            android:id="@+id/btnMoustache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moustache"
+            app:layout_constraintStart_toEndOf="@+id/idMoustache"
+            app:layout_constraintTop_toBottomOf="@+id/btnHair" />
+
+        <Button
+            android:id="@+id/btnEyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyes"
+            app:layout_constraintStart_toEndOf="@+id/idEyes"
+            app:layout_constraintTop_toBottomOf="@+id/btnMoustache" />
+
+        <Button
+            android:id="@+id/btnEyebrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyebrow"
+            app:layout_constraintStart_toEndOf="@+id/idEyebrow"
+            app:layout_constraintTop_toBottomOf="@+id/btnEyes" />
+
+        <Button
+            android:id="@+id/btnBread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bread"
+            app:layout_constraintStart_toEndOf="@+id/idBread"
+            app:layout_constraintTop_toBottomOf="@+id/btnEyebrow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
